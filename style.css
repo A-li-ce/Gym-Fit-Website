@@ -1,0 +1,845 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;700;900&family=Mochiy+Pop+One&family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar ----------------------- */
+
+body {
+  background-color: #111;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.nav {
+  height: 10vh;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 6.5rem;
+  background-color: #222;
+  z-index: 10000000;
+}
+
+.nav h2 {
+  color: #f13a11;
+  font-size: 2.2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item li {
+  display: flex;
+  /* margin: 1rem auto; */
+  justify-content: center;
+  list-style: none;
+  padding: 50px;
+}
+
+.item li a {
+  display: inline-block;
+  color: beige;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.item li a:hover,
+.item .icon i:hover {
+  color: #ff5733;
+  cursor: pointer;
+}
+
+.item .icon i {
+  color: beige;
+  padding-right: 30px;
+  font-weight: bolder;
+}
+
+.nav .openMenu i {
+  font-size: 2rem;
+  margin: -4px auto;
+  display: none;
+  cursor: pointer;
+  color: #cdb3a5;
+}
+
+.nav .item .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  color: #cdb3a5;
+}
+
+.back {
+  margin: 0;
+  padding: 0;
+}
+.back img {
+  height: 100vh;
+  width: 100%;
+  filter: brightness(20%);
+  background-size: cover;
+}
+
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mid p {
+  color: #f4f2f1;
+  border-bottom: 2px solid saddlebrown;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-bottom: 1.4rem;
+}
+
+.mid h2 {
+  color: beige;
+  font-size: 3.1rem;
+}
+
+.mid .btn {
+  margin-top: 2rem;
+}
+
+.mid .btn a.simple:hover {
+  color: #ff5733;
+  cursor: pointer;
+}
+
+.mid .btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mid .btn a.simple {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.9rem 1.6rem;
+}
+
+.mid .btn a.border {
+  color: #ff5733;
+  border: 1px solid #ff5733;
+  font-weight: 400;
+  padding: 0.9rem 1.6rem;
+  border-radius: 3px;
+}
+.mid .btn a.border:hover {
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+/* Details Section----------------------- */
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 15rem;
+  margin: 5rem 0;
+  background: #171819;
+}
+
+.details h3,
+h4,
+h6,
+h5 {
+  color: beige;
+}
+
+.details h3 {
+  font-size: 2.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.1rem;
+}
+
+.details .one {
+  padding-right: 3rem;
+}
+.details .one h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+  color: #9a8787;
+}
+
+.details .one p {
+  color: #615d5d;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.details .one a {
+  color: #fff;
+  background: #f13a11;
+  padding: 0.6rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.details .one a:hover {
+  color: #f13a11;
+  background-color: #fff;
+}
+
+.details .one {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.details .two {
+  width: 45%;
+  border-left: 1px solid #615d5d;
+  padding-left: 4rem;
+}
+
+.details .two h4 {
+  font-size: 2.5rem;
+}
+
+.details .two h5 {
+  font-size: 1.1rem;
+}
+
+.details .two p {
+  font-size: 1.1rem;
+  color: #868181;
+  margin-bottom: 0.8rem;
+}
+
+/* Trainer Section ------------------------*/
+
+.trainer {
+  background: #e9e0db;
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer .about {
+  width: 39%;
+}
+
+.trainer .about h2 {
+  color: #212529;
+  font-size: 2.1rem;
+  padding-bottom: 1.8rem;
+}
+
+.trainer .about p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.trainer .people {
+  width: 57%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer .people .team1 {
+  border-radius: 5px;
+  width: 45%;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1.5px 4px rgb(77, 75, 75);
+}
+
+.trainer .people .team1:hover {
+  box-shadow: 2px 3px 4px rgb(75, 74, 74);
+}
+
+.trainer .people .team1 .teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.trainer .people .team1 img {
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.trainer .people .team1 .name,
+.trainer .people .team1 .profession {
+  padding: 5px 20px 0 20px;
+}
+
+.trainer .people .team1 .name,
+.trainer .people .team1 .profession {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer .people .team1 .name h4 {
+  color: #212529;
+  font-size: 1.5rem;
+}
+
+.trainer .people .team1 .name i,
+.trainer .people .team1 .profession i {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #212529;
+}
+
+.trainer .people .team1 .name i:hover,
+.trainer .people .team1 .profession i:hover {
+  color: #f13a11;
+}
+
+/* Classes Section ------------------------*/
+
+.classes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 9rem;
+  background: #615d5d;
+  border-radius: 10px;
+}
+
+.classes .para {
+  font-size: 1.3rem;
+  color: #95a5a6;
+  padding-bottom: 6px;
+  text-align: center;
+}
+.classes .h2 {
+  font-size: 2.2rem;
+  color: #222;
+  font-weight: 700;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.classes .classMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.classes .classMenu .team1 {
+  width: 32%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #dcb596d9;
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.041),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.classes .classMenu .team1:hover {
+  cursor: pointer;
+  box-shadow: 2px 3px 4px rgb(46, 45, 45);
+}
+
+.classes .classMenu .team1 img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.classes .classMenu .team1 .teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.classes .classMenu .team1 .teamDetails .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px 0 30px;
+}
+
+.classes .classMenu .team1 .teamDetails .name .nameDetails h4 {
+  color: #212529;
+  font-size: 1.7rem;
+}
+.classes .classMenu .team1 .teamDetails .name .nameDetails p span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.classes .classMenu .team1 .teamDetails .name .num h5 {
+  font-size: 1rem;
+  background: #f13a11;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.classes .classMenu .team1 .profession p {
+  font-size: 1rem;
+  color: #666266;
+}
+.classes .classMenu .team1 .profession {
+  padding: 15px 30px 30px 30px;
+}
+
+/* Contact----------------------- */
+
+.contact {
+  background-color: #171819;
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .form {
+  background-color: #171819;
+  width: 45%;
+}
+
+.contact .form h2,
+.contact .map h2 {
+  font-size: 2rem;
+  color: #f13a11;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.contact .form .submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact .form .submit input,
+.contact .form .submit textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #95a5a6;
+  outline: none;
+  margin: 13px 0;
+  background-color: #111;
+  border: 1px solid white;
+}
+
+.contact .form .submit input:focus,
+.contact .form .submit textarea:focus {
+  border: 1px solid #e58666;
+  color: #e58666;
+}
+
+.contact .form .submit input::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  height: 80%;
+}
+
+.contact .form .submit a {
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 13px 0;
+  border: 1px solid #dc7e6c;
+}
+
+.contact .form .submit a:hover {
+  background-color: #f13a11;
+}
+
+/* map----------------------- */
+
+.contact .map h2 {
+  text-align: center;
+}
+.contact .map p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #95a5a6;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.contact .map p i {
+  color: red;
+  padding-right: 4px;
+}
+.contact .map {
+  width: 45%;
+}
+
+.contact .map iframe {
+  width: 100%;
+}
+
+/* footerr------------------------*/
+
+.footer {
+  background-color: #222;
+  border-top: 1px solid #95a5a6;
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer h2 {
+  color: #d0642e;
+}
+
+.footer p {
+  color: #7f8c8d;
+  justify-content: flex-start;
+}
+
+.footer p i {
+  color: #d0642e;
+  padding-right: 5px;
+}
+.footer p i:hover {
+  color: #f13a11;
+  cursor: pointer;
+}
+
+.copy {
+  color: #fff;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 1152px) {
+  .nav .item {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .nav .openMenu i {
+    display: block;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+  }
+  .nav .openMenu i:hover {
+    color: #f13a11;
+  }
+
+  .nav .item .closeMenu {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+  }
+
+  .nav .closeMenu i:hover {
+    color: #f13a11;
+  }
+
+  .nav .item {
+    display: block;
+    text-align: center;
+  }
+
+  .nav .item li a:hover {
+    color: #f13a11;
+  }
+
+  .icon i {
+    display: inline-block;
+    padding: 2rem;
+  }
+
+  .mid p {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .mid h2 {
+    color: beige;
+    font-size: 2.3rem;
+  }
+
+  /* details ---------------------- */
+
+  .details {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .details h3 {
+    font-size: 2rem;
+  }
+
+  .details .one h6 {
+    font-size: 1rem;
+  }
+
+  .details .one p {
+    font-size: 0.9rem;
+    padding-bottom: 3rem;
+  }
+
+  .details .one a {
+    padding: 0.5rem;
+  }
+
+  .details .two h4 {
+    font-size: 2rem;
+  }
+
+  .details .two h5 {
+    font-size: 1rem;
+  }
+
+  .details .two p {
+    font-size: 1rem;
+  }
+
+  /* trainer ----------------------*/
+
+  .trainer {
+    padding: 1rem;
+  }
+
+  .trainer .about {
+    width: 90%;
+  }
+
+  .trainer .about h2 {
+    font-size: 1.9rem;
+  }
+
+  .trainer .about p {
+    font-size: 1rem;
+  }
+  .trainer .people {
+    padding-top: 2rem;
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .trainer .people .team1 {
+    height: auto;
+    width: 80%;
+  }
+
+  .trainer .people .team1 img {
+    height: 14rem;
+  }
+
+  .trainer .people .team1 .name,
+  .trainer .people .team1 .profession {
+    padding: 2px 15px 0 10px;
+  }
+
+  .trainer .people .team1 .name i,
+  .trainer .people .team1 .profession i {
+    font-size: 1rem;
+  }
+
+  /* classes ----------------------*/
+
+  .classes {
+    padding: 1rem 1.2rem;
+    padding-bottom: 2rem 4rem;
+  }
+
+  .classes .classMenu {
+    gap: 20px;
+  }
+
+  .classes .classMenu .team1 {
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+  }
+
+  .classes .classMenu .team1 img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .classes .classMenu .team1 .teamDetails .name {
+    padding: 2px 8px 0 10px;
+  }
+
+  .classes .classMenu .team1 .teamDetails .name .nameDetails h4 {
+    font-size: 1.4rem;
+  }
+
+  .classes .classMenu .team1 .teamDetails .name .num h5 {
+    font-size: 0.9rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .classes .classMenu .team1 .profession p {
+    font-size: 0.8rem;
+    color: #666266;
+  }
+
+  .classes .classMenu .team1 .profession {
+    padding: 5px 6px 10px 10px;
+  }
+
+  /* contact ----------------------*/
+
+  .contact {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact .form {
+    width: 65%;
+    padding-bottom: 2rem;
+  }
+
+  .contact .map {
+    width: 90%;
+    padding-top: 4rem;
+    border-top: 2px solid rgb(220, 86, 23);
+  }
+
+  /* footer ----------------------*/
+
+  .footer {
+    padding: 5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  .mid .btn {
+    display: grid;
+    width: 10rem;
+    margin: 1rem auto;
+  }
+
+  .details {
+    padding: 2rem 3rem;
+  }
+
+  .trainer {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .classes .classMenu {
+    padding: 0 4rem 0 4rem;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  /* details---------------------- */
+
+  .details {
+    display: grid;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details h3 {
+    font-size: 1.8rem;
+  }
+
+  .details .one {
+    padding-right: 0;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .details .two {
+    padding-top: 1rem;
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  /* trainer ---------------------- */
+
+  .trainer {
+    padding: 2rem;
+  }
+
+  .trainer .about h2 {
+    font-size: 1.9rem;
+  }
+
+  .trainer .about p {
+    font-size: 1rem;
+  }
+
+  .trainer .people .team1 {
+    width: 70%;
+  }
+
+  /* classes ----------------------*/
+
+  .classes {
+    padding-bottom: 0 4rem;
+  }
+  .classes .classMenu {
+    padding: 0 4rem 0 4rem;
+    flex-direction: column;
+    /* hei */
+  }
+}
