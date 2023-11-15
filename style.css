@@ -72,13 +72,14 @@ body {
 
 .nav .openMenu i {
   font-size: 2rem;
-  margin: -4px auto;
+  margin-top: -1rem;
   display: none;
   cursor: pointer;
   color: #cdb3a5;
 }
 
 .nav .item .closeMenu {
+  margin-top: -1rem;
   font-size: 2rem;
   display: none;
   cursor: pointer;
