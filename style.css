@@ -44,7 +44,6 @@ body {
 
 .item li {
   display: flex;
-  /* margin: 1rem auto; */
   justify-content: center;
   list-style: none;
   padding: 50px;
@@ -72,7 +71,6 @@ body {
 
 .nav .openMenu i {
   font-size: 2rem;
-  margin-top: -1rem;
   display: none;
   cursor: pointer;
   color: #cdb3a5;
@@ -573,7 +571,7 @@ h5 {
   .nav .openMenu i {
     display: block;
     position: fixed;
-    top: 35px;
+    top: 20px;
     right: 35px;
   }
   .nav .openMenu i:hover {
@@ -583,7 +581,8 @@ h5 {
   .nav .item .closeMenu {
     display: block;
     position: absolute;
-    top: 35px;
+    margin-top: 2px;
+    top: 15px;
     right: 35px;
   }
 
